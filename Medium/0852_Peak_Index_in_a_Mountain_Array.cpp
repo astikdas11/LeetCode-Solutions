@@ -3,7 +3,7 @@
 using namespace std;
 
 
-
+//FUNCTION FOR GETTING THE PEAK VALUE
 int peakIndexInMountainArray(vector<int>& a) {
     int st=0, end =a.size()-1;
     while(st<=end){
@@ -22,6 +22,8 @@ int peakIndexInMountainArray(vector<int>& a) {
 }
 
 
+
+//MAIN FUNCTION FOR PERSONAL TESTCASES
 int main(){
     vector<int> a={3,5,3,2,0};
     int mid=peakIndexInMountainArray(a);
