@@ -33,3 +33,13 @@ int singleNonDuplicate(vector<int>& a) {
     }
     return -1;
 }
+
+
+
+
+//MAIN FUNCTION FOR PERSONAL TESTCASES
+int main(){
+    vector<int> a={1, 1, 2, 3, 3, 4, 4, 8, 8};
+    int ans =singleNonDuplicate(a);
+    cout<<ans;
+}
