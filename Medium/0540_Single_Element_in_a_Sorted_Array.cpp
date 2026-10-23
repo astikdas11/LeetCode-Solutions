@@ -43,3 +43,59 @@ int main(){
     int ans =singleNonDuplicate(a);
     cout<<ans;
 }
+
+
+
+
+
+/*
+
+Problem: Single Element in a Sorted Array
+Platform: LeetCode
+Problem Number: 540
+Problem Link: https://leetcode.com/problems/single-element-in-a-sorted-array/
+Difficulty: Medium
+Topic: Arrays, Binary Search
+Language: C++
+
+Approach:
+Use binary search to find the single element in a sorted
+array where every other element appears exactly twice.
+The parity of the middle index helps determine which half
+contains the single element.
+
+Algorithm:
+1. If the array contains only one element, return it.
+2. Initialize st = 0 and end = n - 1.
+3. Calculate the middle index in each iteration.
+4. Check whether the middle element differs from both
+   its neighbors. If so, return it.
+5. Use the parity of mid and compare adjacent elements
+   to determine which half contains the single element.
+6. Adjust the search boundaries accordingly.
+7. Return -1 if no single element is found.
+
+Time Complexity: O(log n)
+Space Complexity: O(1)
+
+Key Concepts:
+- Binary Search
+- Sorted Arrays
+- Index Parity
+- Search Space Reduction
+
+Example:
+Input: nums = [1, 1, 2, 3, 3, 4, 4, 8, 8]
+Output: 2
+
+Explanation:
+Every element appears twice except 2, which appears once.
+Binary search identifies the unique element without
+scanning the entire array.
+
+Assumption:
+The array is sorted in non-decreasing order, and exactly
+one element appears once while every other element appears
+exactly twice.
+
+*/
